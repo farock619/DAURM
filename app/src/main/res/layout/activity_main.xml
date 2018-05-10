@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A576C"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/daurmimg"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/loginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="203dp"
+        android:text="@string/login_as"
+        android:textColor="#C9FBFA" />
+
+    <Button
+        android:id="@+id/tbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/teacher" />
+
+    <Button
+        android:id="@+id/sbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/student"
+        android:textColor="@android:color/black" />
+
+
+</RelativeLayout>

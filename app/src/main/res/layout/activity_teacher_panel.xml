@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A576C"
+    tools:context=".teacher_panel">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/t_welcome"
+        android:textColor="#C9FBFA"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/timetable_btn"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_button"
+        android:text="@string/t_time_table"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/ongoingsession_btn"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/setting_btn"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_ongoing"
+        android:drawableStart="@drawable/ic_ongoing"
+        android:text="@string/t_ongoing_session"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/t_settings"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/control_btn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_control"
+        android:drawableStart="@drawable/ic_control"
+        android:text="@string/t_control"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

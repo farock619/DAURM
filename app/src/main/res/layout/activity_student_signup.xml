@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A576C"
+    tools:context=".student_signup">
+
+    <TextView
+        android:id="@+id/sregistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/s_student_registration"
+        android:textColor="#C9FBFA"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif" />
+
+    <LinearLayout
+        android:id="@+id/ssignup_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:ignore="RtlCompat">
+
+        <EditText
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawableStart="@drawable/ic_name"
+            android:hint="@string/ss_fullname"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/srollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableLeft="@drawable/ic_rn"
+            android:drawableStart="@drawable/ic_rn"
+            android:ems="10"
+            android:hint="@string/ss_roll_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/sspassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableStart="@drawable/ic_pass"
+            android:ems="10"
+            android:hint="@string/ss_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/sscpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableStart="@drawable/ic_pass"
+            android:ems="10"
+            android:hint="@string/ss_confirm_password"
+            android:inputType="textPassword" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/custom_edittext_bg"
+                android:checked="false"
+                android:text="@string/s_it"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/custom_edittext_bg"
+                android:checked="false"
+                android:text="@string/s_cs"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_se"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/custom_edittext_bg"
+                android:checked="false"
+                android:text="@string/s_se"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/ssubmit"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/ss_submit" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

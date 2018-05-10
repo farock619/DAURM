@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A576C"
+    tools:context=".student_login">
+
+    <ImageView
+        android:id="@+id/sl_blur"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/ts_blur"
+        app:srcCompat="@drawable/blur" />
+
+    <TextView
+        android:id="@+id/s_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/login_as_student"
+        android:textColor=" #C9FBFA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/student_login_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true">
+
+
+        <EditText
+            android:id="@+id/slrollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableLeft="@drawable/ic_login_email"
+            android:drawableStart="@drawable/ic_rn"
+            android:ems="10"
+            android:hint="@string/lroll_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/slpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edittext_bg"
+            android:drawableLeft="@drawable/ic_pass_login"
+            android:drawableStart="@drawable/ic_pass_login"
+            android:ems="10"
+            android:hint="@string/slpassword"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/slogin"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/s_submit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/s_signup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/s_dont_have_account"
+                android:textColor="#C9FBFA"
+                android:textSize="16sp"
+                android:layout_marginStart="50dp" />
+
+            <Button
+                android:id="@+id/s_newsignup"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/s_sign_up"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
